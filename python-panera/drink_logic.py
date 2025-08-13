@@ -1,9 +1,14 @@
 import user_interface
+from menu_item import Drink
+from order import Order
 
 def process_add_drink(order):
-    print('drink')
+    drink_choice = select_drink_type()
+    drink_size = select_drink_size()
 
-def drink_type():
+    new_drink = Drink('Drink', drink_choice, drink_size)
+
+def select_drink_type():
 
     if_continue = True
 
@@ -30,3 +35,24 @@ def drink_type():
                 print('Please enter a valid option!')
 
     return drink_choice
+
+def select_drink_size():
+    if_continue = True
+
+    while(if_continue):
+        user_choice = user_interface.drink_sizes()
+
+        match user_choice:
+            case 1:
+                drink_size = 'small'
+                if_continue = False
+            case 2:
+                drink_size = 'medium'
+                if_continue = False
+            case 3:
+                drink_size = 'large'
+                if_continue = False
+            case _:
+                print('Please enter a valid option!!!')
+            
+    return drink_size
