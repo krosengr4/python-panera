@@ -59,6 +59,16 @@ def meat_options():
     
     return int(input('Enter your option:\n'))
 
+def extra_meat_option():
+    print('\n\t-----WOULD YOU LIKE EXTRA MEAT?-----')
+    print("""
+            ---OPTIONS---
+          1 - Yes ($1.00)
+          2 - No
+          """)
+    
+    return int(input('Enter your option:\n'))
+
 def cheese_options():
     print('\n\t-----CHOOSE YOUR CHEESE-----')
     print("""
@@ -68,6 +78,16 @@ def cheese_options():
         3 - Cheddar
         4 - Swiss
         5 - No cheese
+          """)
+    
+    return int(input('Enter your option:\n'))
+
+def extra_cheese_option():
+    print('\n\t-----WOULD YOU LIKE EXTRA CHEESE?-----')
+    print("""
+            ---OPTIONS---
+          1 - Yes ($0.75)
+          2 - No
           """)
     
     return int(input('Enter your option:\n'))
@@ -93,6 +113,16 @@ def sauce_options():
             2 - Mustard             6 - Au Jus
             3 - Ketchup             7 - Barbeque 
             4 - Thousand Islands    8 - Relish 
+          """)
+    
+    return int(input('Enter your option:\n'))
+
+def toasted_option():
+    print('\n\t-----WOULD YOU LIKE YOUR SANDWICH TOASTED?-----')
+    print("""
+            ---OPTIONS---
+          1 - Yes ($0.50)
+          2 - No
           """)
     
     return int(input('Enter your option:\n'))
