@@ -3,7 +3,6 @@ def main_menu():
     print("""
             ---OPTIONS---
         1 - Order
-        2 - Admin
         
         0 - Exit
           """)
