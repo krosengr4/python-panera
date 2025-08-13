@@ -97,6 +97,20 @@ def sauce_options():
     
     return int(input('Enter your option:\n'))
 
+def chip_options():
+    print('\n\t-----CHOOSE YOUR CHIP-----')
+    print('\tAll chips are $2.25')
+    print("""
+                ---OPTIONS---
+          1 - Original Potato Chips
+          2 - Jalepeno
+          3 - Sea Salt and Vinegar
+          4 - Barbeque
+          5 - Harvest Cheddar
+          """)
+    
+    return int(input('Enter your option:\n'))
+
 def drink_opitons():
     print('\n\t-----CHOOSE YOUR DRINK-----')
     print("""
