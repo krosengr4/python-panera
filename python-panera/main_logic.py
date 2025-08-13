@@ -1,4 +1,4 @@
-import user_interface, sandwich_logic, chip_logic, drink_logic
+import user_interface, sandwich_logic, chip_logic, drink_logic, checkout_logic
 
 def process_main_menu():
     if_continue = True
@@ -27,3 +27,9 @@ def process_order_screen():
                 chip_logic.process_add_chips()
             case 3:
                 drink_logic.process_add_drink()
+            case 4: 
+                checkout_logic.process_checkout()
+            case 0:
+                if_continue = False
+            case _:
+                print('Please enter a valid option!')
