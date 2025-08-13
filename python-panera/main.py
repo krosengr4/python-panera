@@ -6,6 +6,6 @@ def main():
 
     print('\n\nGoodbye!!!')
     print('______________________________________________')
-    print('See you soon!!!')
+    print('See you soon!!!\n\n')
 
 main()
