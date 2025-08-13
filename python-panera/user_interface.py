@@ -34,3 +34,28 @@ def sandwich_sizes():
           """)
     
     return int(input('Enter your option:\n'))
+
+def bread_options():
+    print('\n\t-----CHOOSE YOUR BREAD------')
+    print("""
+            ---OPTIONS---
+        1 - White
+        2 - Wheat
+        3 - Rye
+        4 - Sourdough
+          """)
+    
+    return int(input('Enter your option:\n'))
+
+def meat_options():
+    print('\n\t-----CHOOSE YOUR MEAT------')
+    print("""
+            ---OPTIONS---
+        1 - Steak
+        2 - Ham
+        3 - Turkey
+        4 - Chicken
+        5 - No meat
+          """)
+    
+    return int(input('Enter your option:\n'))
