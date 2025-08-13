@@ -7,6 +7,7 @@ def process_add_drink(order):
     drink_size = select_drink_size()
 
     new_drink = Drink('Drink', drink_choice, drink_size)
+    order.add_item(new_drink)
 
 def select_drink_type():
 

@@ -7,6 +7,9 @@ class Order:
 
     def add_item(self, new_item):
         self.items.append(new_item)
+
+    def clear_order(self):
+        self.items.clear()
     
     def calculate_total(self):
         price = 0.0
@@ -17,7 +20,7 @@ class Order:
         return price
     
     def print_order(self):
-        print('-----ORDER FOR', self.customer_name.upper() + '-----\n')
+        print('\t-----ORDER FOR', self.customer_name.upper() + '-----\n')
 
         for item in self.items:
             item.print_data()

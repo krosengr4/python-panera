@@ -106,6 +106,6 @@ class Drink(MenuItem):
     def print_data(self):
         print('\t-----DRINK-----')
         print('Type:', self.type)
-        print('Size:', self.size)
+        print('Size:', self.size.capitalize())
         print(f'Price: ${self.calculate_price():,.2f}')
         print('------------------------------')
