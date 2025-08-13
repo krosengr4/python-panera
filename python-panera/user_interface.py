@@ -23,3 +23,14 @@ def order_screen():
           """)
     
     return int(input('Enter your option:\n'))
+
+def sandwich_sizes():
+    print('\n\t-----CHOOSE YOUR SIZE------')
+    print("""
+                    ---SIZES---
+        1 - Small (4")...           $5.50
+        2 - Medium (8")...          $7.00
+        3 - Large (12")...          $8.50
+          """)
+    
+    return int(input('Enter your option:\n'))
