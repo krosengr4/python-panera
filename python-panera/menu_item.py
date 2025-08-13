@@ -70,8 +70,7 @@ class Sandwich(MenuItem):
         else:
             print('Not toasted')
             
-        price = self.calculate_price()
-        print('Price: $' + price)
+        print(f'Price: ${self.calculate_price():,.2f}')
         print('------------------------------')
             
 
@@ -80,14 +79,13 @@ class Chip(MenuItem):
         super().__init__(name)
         self.type = type
 
-    def calculate_price():
+    def calculate_price(self):
         return 2.25
     
     def print_data(self):
         print('\t-----CHIP-----')
         print('Type:', self.type)
-        price = self.calculate_price()
-        print('Price: $' + price)
+        print(f'Price: ${self.calculate_price():,.2f}')
         print('------------------------------')
 
     
@@ -109,6 +107,5 @@ class Drink(MenuItem):
         print('\t-----DRINK-----')
         print('Type:', self.type)
         print('Size:', self.size)
-        price = self.calculate_price()
-        print('Price: $' + price)
+        print(f'Price: ${self.calculate_price():,.2f}')
         print('------------------------------')

@@ -1,9 +1,8 @@
 from menu_item import Sandwich, Chip, Drink
 
 class Order:
-    def __init__(self, customer_name, total_price):
+    def __init__(self, customer_name):
         self.customer_name = customer_name
-        self.total_price = total_price
         self.items = []
 
     def add_item(self, new_item):
@@ -18,10 +17,10 @@ class Order:
         return price
     
     def print_order(self):
-        print('\t-----ORDER FOR', self.customer_name.upper())
+        print('-----ORDER FOR', self.customer_name.upper() + '-----\n')
 
         for item in self.items:
             item.print_data()
 
-        print('Total price: $' + self.calculate_total())
+        print(f'Total price: ${self.calculate_total():,.2f}')
     

@@ -1,2 +1,6 @@
-def process_checkout():
-    print('Checkout')
+from order import Order
+
+def process_checkout(order):
+
+    order.calculate_total()
+    order.print_order()
