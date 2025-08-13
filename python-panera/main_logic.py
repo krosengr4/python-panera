@@ -1,4 +1,4 @@
 import user_interface
 
 def process_main_menu():
-    print('Main menu')
+    user_interface.display_main_menu()
