@@ -96,3 +96,27 @@ def sauce_options():
           """)
     
     return int(input('Enter your option:\n'))
+
+def drink_opitons():
+    print('\n\t-----CHOOSE YOUR DRINK-----')
+    print("""
+                ---OPTIONS---
+          1 - Fountain Drink
+          2 - Lemonade
+          3 - Milkshake
+          4 - Sweet Tea
+          5 - Unsweet Tea
+          """)
+    
+    return int(input('Enter your option:\n'))
+
+def drink_sizes():
+    print('\n\t-----CHOOSE YOUR DRINK SIZE-----')
+    print("""
+                        ---SIZES---
+          1 - Small (12oz)...           $0.80
+          2 - Medium (16oz)...          $1.25
+          3 - Large (24oz)...           $2.00
+          """)
+    
+    return int(input('Enter your option:\n'))
