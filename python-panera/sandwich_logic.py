@@ -140,11 +140,8 @@ def process_toppings():
             case _:
                 print('Please enter a valid option!!!')
             
-        add_more = int(input("""
-                    Would you like to add more?
-                        1 - Yes
-                        2 - No
-                            """))
+        add_more = int(input("Would you like to add more?\n1 - Yes\n2 - No\nEnter here: "))
+                       
         if add_more == 2:
             return toppings
         elif add_more != 1:
@@ -152,7 +149,41 @@ def process_toppings():
                                  
 
 def process_sauces():
-    print('Sauces')
+    sauces = []
+
+    while True:
+        sauce_choice = user_interface.sauce_options()
+
+        match sauce_choice:
+            case 1:
+                sauces.append('Mayo')
+            case 2:
+                sauces.append('Mustard')
+            case 3:
+                sauces.append('Ketchup')
+            case 4:
+                sauces.append('Thousand Island')
+            case 5:
+                sauces.append('Vinaigrette')
+            case 6:
+                sauces.append('Au Jus')
+            case 7:
+                sauces.append('Barbeque')
+            case 8:
+                sauces.append('Relish')
+            case 0:
+                sauces.clear()
+                sauces.append('None')
+            case _:
+                print('Please enter a valid option!!!')
+
+        add_more = int(input("Would you like to add more?\n1 - Yes\n2 - No\nEnter here: "))
+
+        if add_more == 2:
+            return sauces
+        elif add_more != 1:
+            print('Please enter either 1 or 2!')
+                
 
 def process_toasted():
     print('Toasted or not')
