@@ -10,50 +10,33 @@ def process_add_drink(order):
     order.add_item(new_drink)
 
 def select_drink_type():
-
-    if_continue = True
-
-    while(if_continue):
+    while True:
         user_choice = user_interface.drink_opitons()
 
         match user_choice:
             case 1:
-                drink_choice = 'Fountain Drink'
-                if_continue = False
+                return 'Fountain Drink'
             case 2:
-                drink_choice = 'Lemonade'
-                if_continue = False
+                return 'Lemonade'
             case 3:
-                drink_choice = ' Milkshake'
-                if_continue = False
+                return 'Milkshake'
             case 4:
-                drink_choice = 'Sweet Tea'
-                if_continue = False
+                return 'Sweet Tea'
             case 5:
-                drink_choice = 'Unsweet Tea'
-                if_continue = False
+                return 'Unsweet Tea'
             case _:
                 print('Please enter a valid option!')
 
-    return drink_choice
-
 def select_drink_size():
-    if_continue = True
-
-    while(if_continue):
+    while True:
         user_choice = user_interface.drink_sizes()
 
         match user_choice:
             case 1:
-                drink_size = 'small'
-                if_continue = False
+                return 'small'
             case 2:
-                drink_size = 'medium'
-                if_continue = False
+                return 'medium'
             case 3:
-                drink_size = 'large'
-                if_continue = False
+                return 'large'
             case _:
                 print('Please enter a valid option!!!')
-            
-    return drink_size
