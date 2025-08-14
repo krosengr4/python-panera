@@ -34,16 +34,16 @@ def process_bread_choice():
 
         match bread_choice:
             case 1:
-                bread = 'white'
+                bread = 'White'
                 if_continue = False
             case 2:
-                bread = 'wheat'
+                bread = 'Wheat'
                 if_continue = False
             case 3:
-                bread = 'rye'
+                bread = 'Rye'
                 if_continue = False
             case 4:
-                bread = 'sourdough'
+                bread = 'Sourdough'
                 if_continue = False
             case _:
                 print('Please choose one of the options that are listed!!!')
@@ -51,7 +51,34 @@ def process_bread_choice():
     return bread
 
 def process_meat():
-    print('Meat')
+    while True:
+        meat_choice = user_interface.meat_options()
+
+        match meat_choice:
+            case 1:
+                return 'Steak'
+            case 2:
+                return 'Ham'
+            case 3:
+                return 'Turkey'
+            case 4:
+                return 'Chicken'
+            case 5:
+                return 'None'
+            case _:
+                print('Please enter a valid option!!!')
+
+def process_extra_meat():
+    while True:
+        extra_meat = user_interface.extra_meat_option()
+
+        if extra_meat == 1:
+            return True
+        elif extra_meat == 2:
+            return False
+        else:
+            print("Please enter a valid option!!!")
+
 
 def process_cheese():
     print('Cheese')
