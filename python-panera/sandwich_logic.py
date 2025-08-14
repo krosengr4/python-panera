@@ -186,4 +186,12 @@ def process_sauces():
                 
 
 def process_toasted():
-    print('Toasted or not')
+    while True:
+        toasted_option = user_interface.toasted_option()
+
+        if toasted_option == 1:
+            return True
+        elif toasted_option == 2:
+            return False
+        else:
+            print('Please enter a valid option!!!')
