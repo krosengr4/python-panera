@@ -6,49 +6,34 @@ def process_make_sandwich(order):
     print('Make a new sandwich')
 
 def process_size():
-    if_continue = True
-
-    while if_continue:
+    while True:
         size_choice = user_interface.sandwich_sizes()
         match size_choice:
             case 1:
-                size = 'small'
-                if_continue = False
+                return 'small'
             case 2:
-                size = 'medium'
-                if_continue = False
+                return 'medium'
             case 3:
-                size = 'large'
-                if_continue = False
+                return 'large'
             case _:
                 print('Please enter a valid option!!!')
-    
-    return size
 
 
 def process_bread_choice():
-    if_continue = True
-
-    while if_continue:
+    while True:
         bread_choice = user_interface.bread_options()
 
         match bread_choice:
             case 1:
-                bread = 'White'
-                if_continue = False
+                return 'White'
             case 2:
-                bread = 'Wheat'
-                if_continue = False
+                return 'Wheat'
             case 3:
-                bread = 'Rye'
-                if_continue = False
+                return 'Rye'
             case 4:
-                bread = 'Sourdough'
-                if_continue = False
+                return 'Sourdough'
             case _:
                 print('Please choose one of the options that are listed!!!')
-
-    return bread
 
 def process_meat():
     while True:
