@@ -19,7 +19,19 @@ def process_make_sandwich(order):
     for sauce in sauces:
         new_sandwich.add_sauces(sauce)
 
-    order.add_item(new_sandwich)
+    confirm_and_add(new_sandwich, order)
+
+def confirm_and_add(sandwich, order):
+    sandwich.print_data()
+
+    user_confirm = input('Is this sandwich correct?\n1 - Yes\n2 - No\nEnter here: ')
+    if user_confirm == 1:
+        order.add_item(sandwich)
+        print('The sandwich was added to your order!')
+    elif user_confirm == 2:
+        print("Oh no... try again? We'll get it right this time I promise!")
+    else:
+        print('Please enter either 1 for yes or 2 for no!!!')
 
 def process_size():
     while True:
