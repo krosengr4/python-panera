@@ -3,7 +3,23 @@ from menu_item import Sandwich
 from order import Order
 
 def process_make_sandwich(order):
-    print('Make a new sandwich')
+    size = process_size()
+    bread = process_bread_choice()
+    meat = process_meat()
+    extra_meat = process_extra_meat()
+    cheese = process_cheese()
+    extra_cheese = process_extra_cheese()
+    toppings = process_toppings()
+    sauces = process_sauces()
+    is_toasted = process_toasted()
+
+    new_sandwich = Sandwich('Sandwich', size, bread, meat, cheese, extra_meat, extra_cheese, is_toasted)
+    for topping in toppings:
+        new_sandwich.add_topping(topping)
+    for sauce in sauces:
+        new_sandwich.add_sauces(sauce)
+
+    order.add_item(new_sandwich)
 
 def process_size():
     while True:
