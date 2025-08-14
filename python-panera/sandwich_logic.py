@@ -22,10 +22,33 @@ def process_size():
                 if_continue = False
             case _:
                 print('Please enter a valid option!!!')
+    
+    return size
 
 
 def process_bread_choice():
-    user_interface.bread_options()
+    if_continue = True
+
+    while if_continue:
+        bread_choice = user_interface.bread_options()
+
+        match bread_choice:
+            case 1:
+                bread = 'white'
+                if_continue = False
+            case 2:
+                bread = 'wheat'
+                if_continue = False
+            case 3:
+                bread = 'rye'
+                if_continue = False
+            case 4:
+                bread = 'sourdough'
+                if_continue = False
+            case _:
+                print('Please choose one of the options that are listed!!!')
+
+    return bread
 
 def process_meat():
     print('Meat')
