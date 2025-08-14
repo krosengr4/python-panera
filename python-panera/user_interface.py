@@ -108,11 +108,12 @@ def toppings_options():
 def sauce_options():
     print('\n\t-----CHOOSE YOUR SAUCE-----')
     print("""
-                        ---OPTIONS---
-            1 - Mayo                5 - Vinnigrette                              
-            2 - Mustard             6 - Au Jus
-            3 - Ketchup             7 - Barbeque 
-            4 - Thousand Islands    8 - Relish 
+                    ---OPTIONS---
+          1 - Mayo                5 - Vinaigrette                              
+          2 - Mustard             6 - Au Jus
+          3 - Ketchup             7 - Barbeque 
+          4 - Thousand Islands    8 - Relish
+                    0 - No Sauce
           """)
     
     return int(input('Enter your option:\n'))
