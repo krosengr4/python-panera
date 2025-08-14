@@ -81,7 +81,33 @@ def process_extra_meat():
 
 
 def process_cheese():
-    print('Cheese')
+    while True:
+        cheese_option = user_interface.cheese_options()
+
+        match cheese_option:
+            case 1:
+                return 'American'
+            case 2:
+                return 'Provolone'
+            case 3:
+                return 'Cheddar'
+            case 4:
+                return 'Swiss'
+            case 5:
+                return 'None'
+            case _:
+                print('Please enter a valid option!!!')
+
+def process_extra_cheese():
+    while True:
+        extra_cheese = user_interface.extra_cheese_option()
+
+        if extra_cheese == 1:
+            return True
+        elif extra_cheese == 2:
+            return False
+        else:
+            print('Please enter a valid option!!!')
 
 def process_toppings():
     print('Toppings')
