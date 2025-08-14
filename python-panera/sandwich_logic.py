@@ -110,7 +110,46 @@ def process_extra_cheese():
             print('Please enter a valid option!!!')
 
 def process_toppings():
-    print('Toppings')
+    toppings = []
+    
+    while True:
+        toppings_choice = user_interface.toppings_options()
+
+        match toppings_choice:
+            case 1:
+                toppings.append('Lettuce')
+            case 2:
+                toppings.append('Peppers')
+            case 3:
+                toppings.append('Onions')
+            case 4:
+                toppings.append('Tomatoes')
+            case 5:
+                toppings.append('Jalepenos')
+            case 6:
+                toppings.append('Cucumbers')
+            case 7:
+                toppings.append('Pickles')
+            case 8:
+                toppings.append('Guacomole')
+            case 9:
+                toppings.append('Mushrooms')
+            case 0:
+                toppings.clear()
+                toppings.append('None')
+            case _:
+                print('Please enter a valid option!!!')
+            
+        add_more = int(input("""
+                    Would you like to add more?
+                        1 - Yes
+                        2 - No
+                            """))
+        if add_more == 2:
+            return toppings
+        elif add_more != 1:
+            print('Please enter either 1 or 2!!!')
+                                 
 
 def process_sauces():
     print('Sauces')

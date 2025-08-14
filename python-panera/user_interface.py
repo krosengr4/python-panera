@@ -100,7 +100,7 @@ def toppings_options():
             2 - Peppers         7 - Pickles
             3 - Onions          8 - Guacamole
             4 - Tomatoes        9 - Mushrooms
-            5 - Jalepenos     
+            5 - Jalepenos       0 - No Toppings     
           """)
     
     return int(input('Enter your option:\n'))
